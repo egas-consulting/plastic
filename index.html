@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>story leaders</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/mapbox/assembly/publisher-staging/src/svgs/mapbox.svg">
+    
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
     <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet" />
     <script src="https://unpkg.com/intersection-observer@0.12.0/intersection-observer.js"></script>
@@ -177,7 +177,7 @@
             position: fixed;
             pointer-events: none;
             opacity: 0;
-            transition: 0s;
+            transition: 0.6s;
         }
 
         .houseimga {
@@ -203,142 +203,148 @@
 </head>
 <body>
 
+<div id="div-empty" class="backimage" style="opacity: 0;">
+    <figure style="margin: 0;">
+        <img id="img-empty" class="houseimga houseimg0" src="plastic.png" style="opacity: 0;" alt="">
+    </figure>
+</div>
+
 <div id="div-Intro" class="backimage" style="opacity: 0;">
     <figure style="margin: 0;">
-        <img id="img-Intro" class="houseimga houseimg0" src="background.svg" style="opacity: 0;" alt="">
+        <img id="img-Intro" class="houseimga houseimg0" src="plastic.png" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 
 <div id="div-Intro2" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-Intro2" class="houseimga houseimg0" src="legenda.png" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 
 <div id="div-cincizeci" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-cincizeci" class="houseimga houseimg0" src="cincizeci.png" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 <div id="div-saizeci" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-saizeci" class="houseimga houseimg0" src="saizeci.png" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 <div id="div-saptezeci" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-saptezeci" class="houseimga houseimg0" src="saptezeci.png" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 <div id="div-optzeci" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-optzeci" class="houseimga houseimg0" src="optzeci.png" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 <div id="div-nouazeci" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-nouazeci" class="houseimga houseimg0" src="nouazeci.png" style="opacity: 0;" alt="">
-    </figure>
+        </figure>
 </div>
 
 <div id="div-douamii" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-douamii" class="houseimga houseimg0" src="douamii.png" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 <div id="div-douamiizece" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-douamiizece" class="houseimga houseimg0" src="douamiizece.png" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 <div id="div-douamiidouazeci" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-douamiidouazeci" class="houseimga houseimg0" src="douamiidouazeci.png" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 <div id="div-douamiitreizeci" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-douamiitreizeci" class="houseimga houseimg0" src="douamiitreizeci.png" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 <div id="div-douamiipatruzeci" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-douamiipatruzeci" class="houseimga houseimg0" src="douamiipatruzeci.png" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 <div id="div-douamiicincizeci" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-douamiicincizeci" class="houseimga houseimg0" src="douamiicincizeci.png" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 <div id="div-douamiisaizeci" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-douamiisaizeci" class="houseimga houseimg0" src="douamiisaizeci.png" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 <div id="div-text4" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-text4" class="houseimga houseimg0" src="totplasticulprodus.png" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 <div id="div-text6" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-text6" class="houseimga houseimg0" src="omulet.gif" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 <div id="div-text7" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-text7" class="houseimga houseimg0" src="people.gif" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 <div id="div-oceania" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-oceania" class="houseimga houseimg0" src="oceania.png" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 <div id="div-europa" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-europa" class="houseimga houseimg0" src="europa.png" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 <div id="div-americadenord" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-americadenord" class="houseimga houseimg0" src="americadenord.png" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 <div id="div-americadesud" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-americadesud" class="houseimga houseimg0" src="americadesud.png" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 <div id="div-africa" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-africa" class="houseimga houseimg0" src="africa.png" style="opacity: 0;" alt="">
     </figure>
 </div>
 
 <div id="div-asia" class="backimage" style="opacity: 0;">
-    <figure>
+    <figure style="margin: 0;">
         <img id="img-asia" class="houseimga houseimg0" src="asia.png" style="opacity: 0;" alt="">
     </figure>
 </div>

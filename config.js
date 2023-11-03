@@ -10,14 +10,47 @@ var config = {
     theme: 'light',
     use3dTerrain: false, //set true for enabling 3D maps.
     auto: false,
-    title: '<span style="font-family:Oswald; font-weight:400; padding: 0.1vh; color:#ffffff; font-size:3rem;" >Un secol de plastic</span>',
-    subtitle: '<span style=" font-family: Oswald; font-weight:200; color:#ffffff; font-size:1.6rem;" >Cât din plasticul planetei vine și pleacă în și din România</span>',
-    byline: '<p style= "font-family:Oswald; font-weight:200; padding: 0.3vh; color:#ffffff; font-size:1.1rem;"><a href="https://panorama.ro/author/edit/" target="_blank">Edit Gyenge</a></p>',
+    title: '<span style="font-family:Oswald; font-weight:400; padding: 0.1vh; color:#ffffff; font-size:3.5rem;" >Un secol de plastic</span>',
+    subtitle: '<span style="font-family: Oswald; font-weight:200; color:#ffffff; font-size:1.6rem;" >Cât din plasticul planetei vine și pleacă în și din România</span>',
+    byline: '<p style= "font-family:Oswald; font-weight:200; padding: 0.3vh; color:#ffffff; font-size:1.1rem;"><a href="https://panorama.ro/author/edit/" target="_blank">Edit Gyenge</a></p> <p style= "font-family:Oswald; font-weight:200; padding: 0.3vh; color:#ffffff; font-size:1.1rem;">Scroll</p> <p> <img src="button.png" alt="scroll down" width="50" height="60" /></p>',
     footer: '<p style="margin-top:1px; margin-bottom:1px;"><b>14 august 2023 </b></p> <p style="margin-top:1px; margin-bottom:1px;"><b>Sursa datelor:</b> wikipedia.org, britannica.com, blackpast.org, </p>',
     chapters: [
         {
-            id: 'Intro',
+            id: 'empty',
             alignment: 'center',        
+            hidden: false,
+            title: '',
+            image: '',
+            backimage:'yes',
+            description: '',
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 16,
+                pitch: 60,
+                bearing: 0,
+            },
+            
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+
+        {
+            id: 'Intro',
+            alignment: 'left',        
             hidden: false,
             title: '',
             image: '',
@@ -47,6 +80,7 @@ var config = {
                 // }
             ]
         },
+
         {
             id: 'Intro2',
             alignment: 'center',
@@ -1156,7 +1190,222 @@ var config = {
             ]
         },
 
+        {
+            id: 'text17',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: '',                      
+            description: 'Până în 2013 România era, în principal, exportator de deșeuri de plastic. Din 2013, cantitatea de deșeuri de plastic importată a depășit-o pe cea exportată și, mai mult, aceasta s-a triplat până în 2019.',
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 16,
+                pitch: 60,
+                bearing: 0,
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'doi.png',
+                //     opacity: 1,                    
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
 
+        {
+            id: 'text18',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: '',                      
+            description: '<iframe src="https://flo.uri.sh/visualisation/15566099/embed" title="Interactive or visual content" class="flourish-embed-iframe" frameborder="0" scrolling="no" style="width:100%;height:600px;" sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"></iframe><div style="width:100%!;margin-top:4px!important;text-align:right!important;"><a class="flourish-credit" href="https://public.flourish.studio/visualisation/15566099/?utm_source=embed&utm_campaign=visualisation/15566099" target="_top" style="text-decoration:none!important"><img alt="Made with Flourish" src="https://public.flourish.studio/resources/made_with_flourish.svg" style="width:105px!important;height:16px!important;border:none!important;margin:0!important;"> </a></div>',
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 16,
+                pitch: 60,
+                bearing: 0,
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'doi.png',
+                //     opacity: 1,                    
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+
+        {
+            id: 'text19',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: '',                      
+            description: 'în 2022, aproape 20% din deșeurile de plastic importate de România au provenit din Grecia, iar alte 18% din Olanda. de la vecinii Bulgari am importat 10% din totalul deșeurilor de plastic importate.',
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 16,
+                pitch: 60,
+                bearing: 0,
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'doi.png',
+                //     opacity: 1,                    
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+
+        {
+            id: 'text20',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: '',                      
+            description: '<iframe src="https://flo.uri.sh/visualisation/15567581/embed" title="Interactive or visual content" class="flourish-embed-iframe" frameborder="0" scrolling="no" style="width:100%;height:600px;" sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"></iframe><div style="width:100%!;margin-top:4px!important;text-align:right!important;"><a class="flourish-credit" href="https://public.flourish.studio/visualisation/15567581/?utm_source=embed&utm_campaign=visualisation/15567581" target="_top" style="text-decoration:none!important"><img alt="Made with Flourish" src="https://public.flourish.studio/resources/made_with_flourish.svg" style="width:105px!important;height:16px!important;border:none!important;margin:0!important;"> </a></div>',
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 16,
+                pitch: 60,
+                bearing: 0,
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'doi.png',
+                //     opacity: 1,                    
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+
+        {
+            id: 'text21',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: '',                      
+            description: 'Aproape un sfert (24,7%) din deșeurile de plastic pe care le exportăm merg către Turcia, 15% merg către Italia și 10% către Polonia.',
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 16,
+                pitch: 60,
+                bearing: 0,
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'doi.png',
+                //     opacity: 1,                    
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+
+        {
+            id: 'text22',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: '',                      
+            description: 'Într-un context în care consumăm mai mult plastic ca oricând, Sistemele de Garanție-Returnare (SGR) au un impact semnificativ în combaterea poluării, deoarece oferă un stimulent financiar consumatorilor pentru a returna ambalajele post-consum pentru reciclare.',
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 16,
+                pitch: 60,
+                bearing: 0,
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'doi.png',
+                //     opacity: 1,                    
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+
+        {
+            id: 'text23',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: '',                      
+            description: 'Începând cu data de 30 noiembrie 2023, consumatorii vor putea returna ambalajele de unică folosință din plastic, sticlă sau metal pentru băuturi în magazine, ceea ce reprezintă un pas semnificativ în promovarea reciclării și reducerea poluării.',
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 16,
+                pitch: 60,
+                bearing: 0,
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'doi.png',
+                //     opacity: 1,                    
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
 
         
         {
