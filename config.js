@@ -21,7 +21,6 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            backimage:'yes',
             description: '',
             location: {
                 center: [12.02595, 49.90885],
@@ -50,12 +49,11 @@ var config = {
 
         {
             id: 'Intro',
-            alignment: 'left',        
+            alignment: 'center',        
             hidden: false,
             title: '',
             image: '',
-            backimage:'yes',
-            description: 'Materialele plastice, obținute din combustibili fosili, au fost inventate cu puțin peste un secol în urmă, iar după cel de-Al Doilea Război Mondial, producția a crescut accelerat revoluționând multe sectoare ale economiei și industrii.',
+            description: 'Materialele plastice, obținute din combustibili fosili, <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;">au fost inventate cu puțin peste un secol în urmă </span>, iar după cel de-Al Doilea Război Mondial, producția a crescut accelerat revoluționând multe sectoare ale economiei și industrii.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -87,8 +85,39 @@ var config = {
             hidden: false,
             title: '',
             image: '',
+            description: 'Cu fiecare deceniu care a trecut, cantitatea de plastic produsă pe glob a crescut exponențial și, deși și populația globului a crescut și ea în acest interval, cantitatea de plastic produsă, raportată la populația globului a crescut de la <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 1 kg de plastic </span> produs anual pe cap de locuitor, la <span style="outline-style: solid; outline-width: thin; outline-color:#6CA821; color:#ffffff; font-weight: bold;"> 58 de kg de plastic.</span>',
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 16,
+                pitch: 60,
+                bearing: 0,
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'doi.png',
+                //     opacity: 1,                    
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+
+        {
+            id: 'Intro2',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: '',
             backimage:'yes',
-            description: 'Cu fiecare deceniu care a trecut, cantitatea de plastic produsă pe glob a crescut exponențial și, deși și populația globului a crescut și ea în acest interval, cantitatea de plastic produsă, raportată la populația globului a crescut de la 1 kg de plastic produs anual pe cap de locuitor la 58 de kg de plastic.',
+            description: 'Folosind proiecțiile Națiunilor Unite referitoare la populație, bazate pe scenariul de fertilitate medie, precum și proiecțiile OCDE referitoare la producția de plastic, bazate pe un scenariu care presupune că politica actuală nu se va schimba în viitorul previzibil, redăm evoluția cantității de plastic produse în următorii 40 de ani.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -376,7 +405,7 @@ var config = {
             title: '',
             image: '',
             backimage:'yes',
-            description: 'Folosind proiecțiile Națiunilor Unite referitoare la populație, bazate pe scenariul de fertilitate medie, precum și proiecțiile OCDE referitoare la producția de plastic, bazate pe un scenariu care presupune că politica actuală nu se va schimba în viitorul previzibil, redăm evoluția cantității de plastic produse în următorii 40 de ani.',
+            description: '',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -472,7 +501,7 @@ var config = {
             title: '',
             image: '',
             backimage:'yes',
-            description: 'În următorii 40 ani, cantitatea de plastic produsă pe cap de locuitor la nivel global se va dubla.',
+            description: 'În următorii 40 ani, cantitatea de plastic produsă pe cap de locuitor la nivel global <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> se va dubla. </span>',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -498,12 +527,76 @@ var config = {
         },
 
         {
+            id: 'empty1',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: '',
+            description: '',
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 16,
+                pitch: 60,
+                bearing: 0,
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'doi.png',
+                //     opacity: 1,                    
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+
+        
+
+        {
             id: 'text1',
             alignment: 'center',
             hidden: false,
             title: '',
             image: '',
-            description: 'Tot plasticul care s-a produs vreodată se află pe planetă, fie în uz, fie sub formă de deșeuri, plasticuri care și-au atins durata de folosire.',
+            description: '<span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> Tot plasticul care s-a produs vreodată se află pe planetă </span>, fie în uz, fie sub formă de deșeuri, plasticuri care și-au atins durata de folosire.',
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 16,
+                pitch: 60,
+                bearing: 0,
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'doi.png',
+                //     opacity: 1,                    
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+
+        {
+            id: 'empty2',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: '',
+            description: '',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -565,7 +658,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Cantitatea cumulativă a plasticului produs din 1950 până acum (2023) este de 11 miliarde de tone. Dacă raportăm întreaga catitate de plastic produsă din anii 50 la populația actuală a planetei. înseamnă că fiecărui locuitor al planetei îi revine în 2023 1,4 tone de plastic.',
+            description: 'Cantitatea cumulativă a plasticului produs din 1950 până acum (2023) este de <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 11 miliarde de tone </span>. Dacă raportăm întreaga catitate de plastic produsă din anii 50 la populația actuală a planetei. înseamnă că fiecărui locuitor al planetei îi revine în 2023 <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 1,4 tone de plastic</span>.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -597,6 +690,36 @@ var config = {
             title: '',
             image: '',
             backimage:'yes',
+            description: '',
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 16,
+                pitch: 60,
+                bearing: 0,
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'doi.png',
+                //     opacity: 1,                    
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+        {
+            id: 'empty3',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: '',
             description: '',
             location: {
                 center: [12.02595, 49.90885],
@@ -660,7 +783,37 @@ var config = {
             title: '',
             image: '',
             backimage:'yes',
-            description: 'fiecare ar avea la-ndemână 1,4 tone de plastic.',
+            description: 'fiecare ar avea la-ndemână <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 1,4 tone de plastic</span>.',
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 16,
+                pitch: 60,
+                bearing: 0,
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'doi.png',
+                //     opacity: 1,                    
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+        {
+            id: 'empty4',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: '',
+            description: '',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -692,7 +845,38 @@ var config = {
             title: '',
             image: '',
             backimage:'yes',
-            description: '8 miliarde de oameni transportând fiecare aproape o tonă și jumătate de plastice.',
+            description: '<span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 8 miliarde de oameni</span> transportând fiecare aproape o tonă și jumătate de plastice.',
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 16,
+                pitch: 60,
+                bearing: 0,
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'doi.png',
+                //     opacity: 1,                    
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+
+        {
+            id: 'empty5',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: '',
+            description: '',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -723,7 +907,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',            
-            description: 'Și deși din această cantitate se referă la întreaga producție de plastic din care o parte este încă în uz, deșeurile reprezintă o parte importantă. 40% din producția anuală de plastic constă din articole de unică folosință. Aceste produse, cum ar fi pungile de plastic sau ambalajele alimentare, servesc scopuri scurte, adesea de numai câteva minute sau ore, dar au capacitatea de a persista în mediul înconjurător timp de sute de ani.',
+            description: 'Și deși din această cantitate se referă la întreaga producție de plastic din care o parte este încă în uz, deșeurile reprezintă o parte importantă. <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;">40% din producția anuală de plastic constă din articole de unică folosință</span>. Aceste produse, cum ar fi pungile de plastic sau ambalajele alimentare, servesc scopuri scurte, adesea de numai câteva minute sau ore, dar au capacitatea de a persista în mediul înconjurător timp de sute de ani.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -753,8 +937,9 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: '',
-            image: '',            
-            description: 'O mare parte din deșeurile de plastic se află în oceane. Râurile mari au un rol important în transportul acestor deșeuri, acționând ca modalitate de transport pe măsură ce curg în aval. După ce ajung în apele deschise ale oceanelor, o parte din deșeuri rămân în apropierea țărmurilor sau, odată prinse în curenții oceanici, sunt purtate în jurul lumii.',
+            image: '', 
+            backimage:'yes',          
+            description: 'O mare parte din deșeurile de plastic <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;">se află în oceane</span>. Râurile mari au un rol important în transportul acestor deșeuri, acționând ca modalitate de transport pe măsură ce curg în aval. După ce ajung în apele deschise ale oceanelor, o parte din deșeuri rămân în apropierea țărmurilor sau, odată prinse în curenții oceanici, sunt purtate în jurul lumii.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -948,7 +1133,38 @@ var config = {
             title: '',
             image: '',
             backimage:'yes',            
-            description: 'Asia rămâne liderul deșeurilor de plastic emise în ocean. Peste 80% din aceste deșeuri pleacă de pe continentul asicatic.',
+            description: 'Asia rămâne liderul deșeurilor de plastic emise în ocean. Și deși din această cantitate se referă la întreaga producție de plastic din care o parte este încă în uz, deșeurile reprezintă o parte importantă. <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;">Peste 80%</span> din aceste deșeuri pleacă de pe continentul asicatic.',
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 16,
+                pitch: 60,
+                bearing: 0,
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'doi.png',
+                //     opacity: 1,                    
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+
+        {
+            id: 'empty6',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: '',
+            description: '',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -1010,7 +1226,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',                      
-            description: 'Uniunea Europeană generează anual, în medie, 32 de kilograme de deșeuri de plastic pe cap de locuitor.',
+            description: 'Uniunea Europeană generează anual, în medie, <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;">32 de kilograme de deșeuri de plastic</span> pe cap de locuitor.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -1196,7 +1412,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',                      
-            description: 'Până în 2013 România era, în principal, exportator de deșeuri de plastic. Din 2013, cantitatea de deșeuri de plastic importată a depășit-o pe cea exportată și, mai mult, aceasta s-a triplat până în 2019.',
+            description: 'Până în 2013 România era, în principal, exportator de deșeuri de plastic. Din 2013, cantitatea de deșeuri de plastic importată a depășit-o pe cea exportată și, mai mult, aceasta <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;">s-a triplat </span>până în 2019.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
