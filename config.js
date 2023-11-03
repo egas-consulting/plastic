@@ -1,6 +1,6 @@
 var config = {
     style: 'mapbox://styles/ed1990/clohjg3ot002401nz1go41801',
-    accessToken: 'pk.eyJ1IjoiZWQxOTkwIiwiYSI6ImNsb2hwYjg2NjFmMmcycW1lbGxwdGdoM2sifQ.hFMMUSiY99LxBf0keuLfDA',
+    accessToken: 'pk.eyJ1IjoiZWQxOTkwIiwiYSI6ImNsbHdjMWNsODA0NnMzanN5amI3YjVwdzgifQ.PL1xMSDztFZISCkgeNZ2gg',
     showMarkers: false,
     markerColor: '#3FB1CE',
     projection: 'globe',
@@ -1474,7 +1474,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',                      
-            description: 'în 2022, aproape 20% din deșeurile de plastic importate de România au provenit din Grecia, iar alte 18% din Olanda. de la vecinii Bulgari am importat 10% din totalul deșeurilor de plastic importate.',
+            description: 'în 2022, <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;">aproape 20% </span> din deșeurile de plastic importate de România au provenit din Grecia, iar alte 18% din Olanda. de la vecinii Bulgari am importat 10% din totalul deșeurilor de plastic importate.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -1623,15 +1623,13 @@ var config = {
             ]
         },
 
-        
         {
-            id: 'Methodology3',
+            id: 'empty7',
             alignment: 'center',
             hidden: false,
             title: '',
             image: '',
-            backimage:'douamii.png',           
-            description: 'Reprezentarea șefilor de stat, și nu a șefilor de guvern oferă o perspectivă relevantă, deoarece, în majoritatea țărilor, șefii de stat sunt aleși prin vot popular direct. E un proces diferit, în cele mai multe cazuri, de numirea șefilor de guvern și oferă o perspectivă asupra opțiunilor cetățenilor. Cu alte cuvinte, pe cine aleg oamenii să îi reprezinte direct în cea mai înaltă funcție în stat, care sunt elementele din profilul candidatului cu care rezonează alegătorii?',
+            description: '',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -1643,8 +1641,8 @@ var config = {
             callback: '',
             onChapterEnter: [
                 // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
+                //     layer: 'doi.png',
+                //     opacity: 1,                    
                 //     duration: 5000
                 // }
             ],
@@ -1655,6 +1653,9 @@ var config = {
                 // }
             ]
         },
+
+        
+        
 
         
         
