@@ -1,6 +1,6 @@
 var config = {
     style: 'mapbox://styles/ed1990/clohjg3ot002401nz1go41801',
-    accessToken: 'pk.eyJ1IjoiZWQxOTkwIiwiYSI6ImNsbHdjMWNsODA0NnMzanN5amI3YjVwdzgifQ.PL1xMSDztFZISCkgeNZ2gg',
+    accessToken: 'pk.eyJ1IjoiZWQxOTkwIiwiYSI6ImNsb2llZHRyOTFwZjUyam8yZHl6ejNkcDAifQ.tYR2SbODulf8gF529UtQ0g',
     showMarkers: false,
     markerColor: '#3FB1CE',
     projection: 'globe',
