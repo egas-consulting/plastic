@@ -10,8 +10,8 @@ var config = {
     theme: 'light',
     use3dTerrain: false, //set true for enabling 3D maps.
     auto: false,
-    title: '<span style="font-family:Oswald; font-weight:400; padding: 0.1vh; color:#ffffff; font-size:3.5rem;" >Un secol de plastic</span>',
-    subtitle: '<span style="font-family: Oswald; font-weight:200; color:#ffffff; font-size:1.6rem;" >Cât din plasticul planetei vine și pleacă în și din România</span>',
+    title: '<span style="font-family:Oswald; font-weight:400; padding: 0.1vh; color:#ffffff; font-size:1.3rem;" >Un secol de plastic</span>',
+    subtitle: '<span style="font-family:Oswald; font-weight:200; color:#ffffff; font-size:2rem;" >Circuitul plasticului prin România: de unde vine, unde îl trimitem și cât rămâne aici</span>',
     byline: '<p style= "font-family:Oswald; font-weight:200; padding: 0.3vh; color:#ffffff; font-size:1.1rem;"><a href="https://panorama.ro/author/edit/" target="_blank">Edit Gyenge</a></p> <p style= "font-family:Oswald; font-weight:200; padding: 0.3vh; color:#ffffff; font-size:1.1rem;">Scroll</p> <p> <img src="button.png" alt="scroll down" width="50" height="60" /></p>',
     footer: '<p style="margin-top:1px; margin-bottom:1px;"><b>06 noiembrie 2023 </b></p> <p style="margin-top:1px; margin-bottom:1px;"><b>Sursa datelor:</b> Eurostat, Banca Mondială, UN Comtrade Database, Our World in Data <br> Material editat de: <a href="https://panorama.ro/author/alina-matis/" target="_blank">Alina Mărculescu Matiș</a> </p>',
     chapters: [
@@ -48,12 +48,76 @@ var config = {
         },
 
         {
+            id: 'prim',
+            alignment: 'center',        
+            hidden: false,
+            title: '',
+            image: '',
+            description: 'Începând cu data de 30 noiembrie 2023, în România a intrat în vigoare sistemul garanție-returnare (SGR). De acum, plasticul nu mai e doar sursă de poluare și risipă, ci o resursă, cu un preț concret pentru fiecare consumator: <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 50 de bani </span>, cât e garanția pe recipient care se adaugă prețului produselor vândute în ambalaje de plastic, sticlă sau metal și care se recuperează când e returnat ambalajul.',
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 16,
+                pitch: 60,
+                bearing: 0,
+            },
+            
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+
+        {
+            id: 'prim2',
+            alignment: 'center',        
+            hidden: false,
+            title: '',
+            image: '',
+            description: 'Sistemul reprezintă un pas semnificativ în promovarea reciclării și reducerea poluării. Dintre cele trei tipuri de materiale incluse în SGR, <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> plasticul are de departe cel mai mare impact </span> asupra mediului. Asta și pentru că folosirea lui s-a extins cu viteză amețitoare în ultimul secol.',
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 16,
+                pitch: 60,
+                bearing: 0,
+            },
+            
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+
+        {
             id: 'Intro',
             alignment: 'center',        
             hidden: false,
             title: '',
             image: '',
-            description: 'Materialele plastice, obținute din combustibili fosili, <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;">au fost inventate cu puțin peste un secol în urmă </span>, iar după cel de-Al Doilea Război Mondial, producția a crescut accelerat revoluționând multe sectoare ale economiei și industrii.',
+            description: 'Materialele plastice, obținute din combustibili fosili, <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> au fost inventate acum mai bine de un secol </span>, Însă producția s-a răspândit abia după cel de-Al Doilea Război Mondial. Potențialul lui a fost conștientizat foarte repede, iar plasticul a ajun să transforme industrii și economia globală.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -85,7 +149,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Cu fiecare deceniu care a trecut, cantitatea de plastic produsă pe glob a crescut exponențial și, deși și populația globului a crescut și ea în acest interval, cantitatea de plastic produsă, raportată la populația globului a crescut de la <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 1 kg de plastic </span> produs anual pe cap de locuitor, la <span style="outline-style: solid; outline-width: thin; outline-color:#6CA821; color:#ffffff; font-weight: bold;"> 58 de kg de plastic.</span>',
+            description: 'Cu fiecare deceniu care s-a scurs de atunci, cantitatea de plastic produsă pe glob a crescut exponențial. Chiar dacă o raportăm la creșterea populației planetei, tot am ajuns, în 70 de ani, de la <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 1 kg de plastic </span>produs anual pe cap de locuitor, la <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 58 kg de plastic </span>. Aici suntem acum.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -117,7 +181,7 @@ var config = {
             title: '',
             image: '',
             backimage:'yes',
-            description: 'Folosind proiecțiile Națiunilor Unite referitoare la populație, bazate pe scenariul de fertilitate medie, precum și proiecțiile OCDE referitoare la producția de plastic, bazate pe un scenariu care presupune că politica actuală nu se va schimba în viitorul previzibil, redăm evoluția cantității de plastic produse în următorii 40 de ani.',
+            description: 'Dacă, însă, situația nu se schimbă în viitorul apropiat, cantitatea de plastic produsă pe cap de locuitor la nivel global se va dubla, în următorii 40 ani. E un scenariu care rezultă din suprapunerea proiecțiilor ONU privind evoluția populației și a prognozelor Organizației de Cooperare și Dezvoltare Economică (OCDE) referitoare la producția de plastic.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -526,77 +590,14 @@ var config = {
             ]
         },
 
-        {
-            id: 'empty1',
-            alignment: 'center',
-            hidden: false,
-            title: '',
-            image: '',
-            description: '',
-            location: {
-                center: [12.02595, 49.90885],
-                zoom: 16,
-                pitch: 60,
-                bearing: 0,
-            },
-            mapAnimation: 'jumpTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-                // {
-                //     layer: 'doi.png',
-                //     opacity: 1,                    
-                //     duration: 5000
-                // }
-            ],
-            onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
-            ]
-        },
-
         
-
         {
             id: 'text1',
             alignment: 'center',
             hidden: false,
             title: '',
             image: '',
-            description: '<span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> Tot plasticul care s-a produs vreodată se află pe planetă </span>, fie în uz, fie sub formă de deșeuri, plasticuri care și-au atins durata de folosire.',
-            location: {
-                center: [12.02595, 49.90885],
-                zoom: 16,
-                pitch: 60,
-                bearing: 0,
-            },
-            mapAnimation: 'jumpTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-                // {
-                //     layer: 'doi.png',
-                //     opacity: 1,                    
-                //     duration: 5000
-                // }
-            ],
-            onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
-            ]
-        },
-
-        {
-            id: 'empty2',
-            alignment: 'center',
-            hidden: false,
-            title: '',
-            image: '',
-            description: '',
+            description: 'Problematic nu e doar că se produce tot mai mult plastic. Odată produs, el nu mai pleacă nicăieri sute de ani. <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> Tot plasticul care s-a produs vreodată încă se află pe planetă. </span>  Îl regăsim fie încă în uz, fie sub formă de deșeuri sau de plastic care și-a încheiat durata de folosire.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -658,7 +659,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Cantitatea cumulativă a plasticului produs din 1950 până acum (2023) este de <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 11 miliarde de tone </span>. Dacă raportăm întreaga catitate de plastic produsă din anii 50 la populația actuală a planetei. înseamnă că fiecărui locuitor al planetei îi revine în 2023 <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 1,4 tone de plastic</span>.',
+            description: 'Din 1950m și până în 2023, s-au produs <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 11 miliarde de tone de plastic. </span> ',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -714,44 +715,14 @@ var config = {
                 // }
             ]
         },
-        {
-            id: 'empty3',
-            alignment: 'center',
-            hidden: false,
-            title: '',
-            image: '',
-            description: '',
-            location: {
-                center: [12.02595, 49.90885],
-                zoom: 16,
-                pitch: 60,
-                bearing: 0,
-            },
-            mapAnimation: 'jumpTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-                // {
-                //     layer: 'doi.png',
-                //     opacity: 1,                    
-                //     duration: 5000
-                // }
-            ],
-            onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
-            ]
-        },
-
+        
         {
             id: 'text5',
             alignment: 'center',
             hidden: false,
             title: '',
             image: '',            
-            description: 'Dacă tot acest plastic ar fi disponibil și împărțit fiecărui om,',
+            description: 'Dacă raportăm întreaga cantitate de plastic produsă din anii ‘50 la populația actuală a planetei, ',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -783,7 +754,7 @@ var config = {
             title: '',
             image: '',
             backimage:'yes',
-            description: 'fiecare ar avea la-ndemână <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 1,4 tone de plastic</span>.',
+            description: 'înseamnă că fiecărui om îi revin în 2023 <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 1,4 tone de plastic. </span>',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -807,37 +778,7 @@ var config = {
                 // }
             ]
         },
-        {
-            id: 'empty4',
-            alignment: 'center',
-            hidden: false,
-            title: '',
-            image: '',
-            description: '',
-            location: {
-                center: [12.02595, 49.90885],
-                zoom: 16,
-                pitch: 60,
-                bearing: 0,
-            },
-            mapAnimation: 'jumpTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-                // {
-                //     layer: 'doi.png',
-                //     opacity: 1,                    
-                //     duration: 5000
-                // }
-            ],
-            onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
-            ]
-        },
-
+        
         {
             id: 'text7',
             alignment: 'center',
@@ -845,7 +786,7 @@ var config = {
             title: '',
             image: '',
             backimage:'yes',
-            description: '<span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 8 miliarde de oameni</span> transportând fiecare aproape o tonă și jumătate de plastice.',
+            description: 'Imaginați-vă 8 miliarde de oameni care transportă fiecare aproape o tonă și jumătate de plastic anul acesta. Anul viitor, la această tonă și jumătate se va mai adăuga creșterea aferentă fiecărei persoane.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -870,44 +811,14 @@ var config = {
             ]
         },
 
-        {
-            id: 'empty5',
-            alignment: 'center',
-            hidden: false,
-            title: '',
-            image: '',
-            description: '',
-            location: {
-                center: [12.02595, 49.90885],
-                zoom: 16,
-                pitch: 60,
-                bearing: 0,
-            },
-            mapAnimation: 'jumpTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-                // {
-                //     layer: 'doi.png',
-                //     opacity: 1,                    
-                //     duration: 5000
-                // }
-            ],
-            onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
-            ]
-        },
-
+        
         {
             id: 'text8',
             alignment: 'center',
             hidden: false,
             title: '',
             image: '',            
-            description: 'Și deși din această cantitate se referă la întreaga producție de plastic din care o parte este încă în uz, deșeurile reprezintă o parte importantă. <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;">40% din producția anuală de plastic constă din articole de unică folosință</span>. Aceste produse, cum ar fi pungile de plastic sau ambalajele alimentare, servesc scopuri scurte, adesea de numai câteva minute sau ore, dar au capacitatea de a persista în mediul înconjurător timp de sute de ani.',
+            description: 'Și deși această cantitate se referă la întreaga producție istorică de plastic, din care doar o parte este încă în uz, ambalajele reprezintă o parte importantă. <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 40% din producția anuală de plastic </span> e dată de produse și ambalaje de unică folosință. Aceste articole, cum ar fi pungile de plastic sau ambalajele alimentare, au un scop foarte lung, adesea de numai câteva minute sau ore, dar au capacitatea de a „bântui” mediul înconjurător timp de sute de ani după ce le aruncăm.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -939,7 +850,7 @@ var config = {
             title: '',
             image: '', 
             backimage:'yes',          
-            description: 'O mare parte din deșeurile de plastic <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;">se află în oceane</span>. Râurile mari au un rol important în transportul acestor deșeuri, acționând ca modalitate de transport pe măsură ce curg în aval. După ce ajung în apele deschise ale oceanelor, o parte din deșeuri rămân în apropierea țărmurilor sau, odată prinse în curenții oceanici, sunt purtate în jurul lumii.',
+            description: 'O mare parte din deșeurile de plastic <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> se află în oceane, </span> ceea ce are consecințe majore. Râurile mari au un rol important în transportul acestor deșeuri. După ce ajung în apele deschise ale mărilor și oceanelor, o parte din deșeuri rămân în apropierea țărmurilor sau, odată prinse în curenții oceanici, sunt purtate în jurul lumii.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -973,7 +884,7 @@ var config = {
             title: '',
             image: '',
             backimage:'yes',            
-            description: 'Din întreaga cantitate de deșeuri de plastic emisă în oceane, Australia și Ocenia dețin cea mai mică pondere.',
+            description: 'Din întreaga cantitate de deșeuri de plastic emisă în oceane, Australia și Oceania dețin cea mai mică pondere.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -1133,7 +1044,7 @@ var config = {
             title: '',
             image: '',
             backimage:'yes',            
-            description: 'Asia rămâne liderul deșeurilor de plastic emise în ocean. Și deși din această cantitate se referă la întreaga producție de plastic din care o parte este încă în uz, deșeurile reprezintă o parte importantă. <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;">Peste 80%</span> din aceste deșeuri pleacă de pe continentul asicatic.',
+            description: 'În Asia, în schimb, e cea mai gravă situație. Continentul e liderul deșeurilor de plastic emise în ocean. <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 80% din aceste deșeuri </span> pleacă  de pe continentul asiatic.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -1158,37 +1069,7 @@ var config = {
             ]
         },
 
-        {
-            id: 'empty6',
-            alignment: 'center',
-            hidden: false,
-            title: '',
-            image: '',
-            description: '',
-            location: {
-                center: [12.02595, 49.90885],
-                zoom: 16,
-                pitch: 60,
-                bearing: 0,
-            },
-            mapAnimation: 'jumpTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-                // {
-                //     layer: 'doi.png',
-                //     opacity: 1,                    
-                //     duration: 5000
-                // }
-            ],
-            onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
-            ]
-        },
-
+        
         {
             id: 'text10',
             alignment: 'center',
@@ -1257,7 +1138,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',                      
-            description: 'Producția accelerată de deșeuri de plastic din ultimii ani a făcut posibilă "globalizarea reciclării". Deși cea mai mare parte a deșeurilor de plastic este gestionată și reciclată la nivel național, exportul de deșeuri de plastic ajută la gestionarea unei părți a emisiilor de plastic într-un mod mai economic și reduce presiunea asupra facilităților de reciclare locale și asupra gropilor de gunoi.',
+            description: 'Producția accelerată de deșeuri de plastic din ultimii ani a făcut posibilă „globalizarea reciclării”. Deși cea mai mare parte a deșeurilor de plastic este gestionată și reciclată la nivel național, exportul de deșeuri de plastic ajută la gestionarea unei părți a emisiilor de plastic într-un mod mai economic. De asemenea, reduce presiunea pe facilitățile locale de reciclare și cea pusă pe gropile de gunoi.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -1288,7 +1169,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',                      
-            description: 'Importul de plastic are avantaje financiare. Redestinarea materialelor plastice reciclate în produse reprezintă o opțiune mult mai economică pentru industrii care altfel ar trebui să cumpere plastice noi, costisitoare.',
+            description: 'Importul de plastic are și avantaje financiare. Folosirea materialelor plastice reciclate în noi produse reprezintă o opțiune mult mai economică pentru industrii care, altfel, ar trebui să cumpere plastice noi, tot mai costisitoare, din cauza politicilor de combatere a poluării.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -1319,7 +1200,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',                      
-            description: 'Și deși există avantaje materiale ale comerțului cu deșeuri de plastic, state mai puțin dezvoltate au devenit ținta unor practici de export care au dus la poluarea mediului înconjurător. Așa se face că în 2019, 187 de state au convenit adăugarea plasticului într-un amendament al Conveției de la Basel, care reglementează comerțul internațional cu deșeuri. Amendamentul limitează comerțui internațional cu resturi de plastic, cu excepția situațiilor în care nu există capacitatea adecvată de reciclare.',
+            description: 'Cu toate că există avantaje ale comerțului cu deșeuri de plastic, efectul advers e că state mai puțin dezvoltate au devenit ținta unor practici de export care au dus la poluarea mediului înconjurător. Așa se face că în 2019, 187 de state au convenit adăugarea plasticului într-un amendament al Conveției de la Basel, care reglementează comerțul internațional cu deșeuri. Amendamentul limitează comerțul internațional cu resturi de plastic, cu excepția situațiilor în care nu există capacitatea adecvată de reciclare.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -1350,7 +1231,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',                      
-            description: 'La nivelul Uniunii Europene, deșeurile de plastic ajung în principal în Germania, Țările de Jos și Belgia - țări cu porturi mari.',
+            description: 'La nivelul Uniunii Europene, deșeurile de plastic ajung în principal în Germania, Țările de Jos și Belgia - țări cu porturi mari și cu capacitate de reciclare.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -1412,7 +1293,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',                      
-            description: 'Până în 2013 România era, în principal, exportator de deșeuri de plastic. Din 2013, cantitatea de deșeuri de plastic importată a depășit-o pe cea exportată și, mai mult, aceasta <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;">s-a triplat </span>până în 2019.',
+            description: 'Până în 2013, România era preponderent exportator de deșeuri de plastic. Din 2013, însă, cantitatea de deșeuri de plastic importată a depășit-o pe cea pe care am trimis-o la export. Ba chiar <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> s-a triplat </span> în numai șase ani, adică până în 2019.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -1474,7 +1355,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',                      
-            description: 'în 2022, <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;">aproape 20% </span> din deșeurile de plastic importate de România au provenit din Grecia, iar alte 18% din Olanda. de la vecinii Bulgari am importat 10% din totalul deșeurilor de plastic importate.',
+            description: 'în 2022, <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;">aproape 20% </span> din deșeurile de plastic importate de România au provenit din Grecia, iar alte 18%, din Olanda. De la vecinii bulgari, am importat 10% din totalul deșeurilor de plastic pe care le-am importat în anul respectiv.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -1536,7 +1417,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',                      
-            description: 'Aproape un sfert (24,7%) din deșeurile de plastic pe care le exportăm merg către Turcia, 15% merg către Italia și 10% către Polonia.',
+            description: '<span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> Aproape un sfert (24,7%) </span> din deșeurile de plastic pe care le exportăm merg către Turcia, 15% ajung în Italia și 10% se duc în Polonia.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -1567,7 +1448,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',                      
-            description: 'Într-un context în care consumăm mai mult plastic ca oricând, Sistemele de Garanție-Returnare (SGR) au un impact semnificativ în combaterea poluării, deoarece oferă un stimulent financiar consumatorilor pentru a returna ambalajele post-consum pentru reciclare.',
+            description: 'Într-un context în care consumăm mai mult plastic ca oricând, sistemul de garanție-returnare (SGR) are un impact semnificativ în combaterea poluării, deoarece oferă un stimulent financiar consumatorilor, pentru a returna ambalajele post-consum pentru reciclare și a scădea, astfel, folosirea de plastic nou produs.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -1592,67 +1473,7 @@ var config = {
             ]
         },
 
-        {
-            id: 'text23',
-            alignment: 'center',
-            hidden: false,
-            title: '',
-            image: '',                      
-            description: 'Începând cu data de 30 noiembrie 2023, consumatorii vor putea returna ambalajele de unică folosință din plastic, sticlă sau metal pentru băuturi în magazine, ceea ce reprezintă un pas semnificativ în promovarea reciclării și reducerea poluării.',
-            location: {
-                center: [12.02595, 49.90885],
-                zoom: 16,
-                pitch: 60,
-                bearing: 0,
-            },
-            mapAnimation: 'jumpTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-                // {
-                //     layer: 'doi.png',
-                //     opacity: 1,                    
-                //     duration: 5000
-                // }
-            ],
-            onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
-            ]
-        },
-
-        {
-            id: 'empty7',
-            alignment: 'center',
-            hidden: false,
-            title: '',
-            image: '',
-            description: '',
-            location: {
-                center: [12.02595, 49.90885],
-                zoom: 16,
-                pitch: 60,
-                bearing: 0,
-            },
-            mapAnimation: 'jumpTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-                // {
-                //     layer: 'doi.png',
-                //     opacity: 1,                    
-                //     duration: 5000
-                // }
-            ],
-            onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
-            ]
-        },
+        
 
         
         
