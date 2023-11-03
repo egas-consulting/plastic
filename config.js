@@ -13,7 +13,7 @@ var config = {
     title: '<span style="font-family:Oswald; font-weight:400; padding: 0.1vh; color:#ffffff; font-size:3.5rem;" >Un secol de plastic</span>',
     subtitle: '<span style="font-family: Oswald; font-weight:200; color:#ffffff; font-size:1.6rem;" >Cât din plasticul planetei vine și pleacă în și din România</span>',
     byline: '<p style= "font-family:Oswald; font-weight:200; padding: 0.3vh; color:#ffffff; font-size:1.1rem;"><a href="https://panorama.ro/author/edit/" target="_blank">Edit Gyenge</a></p> <p style= "font-family:Oswald; font-weight:200; padding: 0.3vh; color:#ffffff; font-size:1.1rem;">Scroll</p> <p> <img src="button.png" alt="scroll down" width="50" height="60" /></p>',
-    footer: '<p style="margin-top:1px; margin-bottom:1px;"><b>14 august 2023 </b></p> <p style="margin-top:1px; margin-bottom:1px;"><b>Sursa datelor:</b> wikipedia.org, britannica.com, blackpast.org, </p>',
+    footer: '<p style="margin-top:1px; margin-bottom:1px;"><b>06 noiembrie 2023 </b></p> <p style="margin-top:1px; margin-bottom:1px;"><b>Sursa datelor:</b> Eurostat, Banca Mondială, UN Comtrade Database, Our World in Data <br> Material editat de: <a href="https://panorama.ro/author/alina-matis/" target="_blank">Alina Mărculescu Matiș</a> </p>',
     chapters: [
         {
             id: 'empty',
