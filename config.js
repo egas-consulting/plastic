@@ -10,9 +10,9 @@ var config = {
     theme: 'light',
     use3dTerrain: false, //set true for enabling 3D maps.
     auto: false,
-    title: '<span style="font-family:Oswald; font-weight:400; padding: 0.1vh; color:#ffffff; font-size:1.3rem;" >Un secol de plastic</span>',
+    title: '<span style="font-family:Oswald; font-weight:400; padding: 0.1vh; color:#ffffff; font-size:1.4rem;" >Un secol de plastic</span>',
     subtitle: '<span style="font-family:Oswald; font-weight:200; color:#ffffff; font-size:2rem;" >Circuitul plasticului prin România: de unde vine, unde îl trimitem și cât rămâne aici</span>',
-    byline: '<p style= "font-family:Oswald; font-weight:200; padding: 0.3vh; color:#ffffff; font-size:1.1rem;"><a href="https://panorama.ro/author/edit/" target="_blank">Edit Gyenge</a></p> <p style= "font-family:Oswald; font-weight:200; padding: 0.3vh; color:#ffffff; font-size:1.1rem;">Scroll</p> <p> <img src="button.png" alt="scroll down" width="50" height="60" /></p>',
+    byline: '<p style= "font-family:Oswald; font-weight:200; padding-bottom: 9vh; color:#ffffff; font-size:1.1rem;"><a href="https://panorama.ro/author/edit/" target="_blank">Edit Gyenge</a></p> <p style= "font-family:Oswald; font-weight:200; padding: 0.3vh; color:#ffffff; font-size:1.1rem;">Scroll</p> <p> <img src="button.gif" alt="scroll down" width="70" height="60" /></p>',
     footer: '<p style="margin-top:1px; margin-bottom:1px;"><b>06 noiembrie 2023 </b></p> <p style="margin-top:1px; margin-bottom:1px;"><b>Sursa datelor:</b> Eurostat, Banca Mondială, UN Comtrade Database, Our World in Data <br> Material editat de: <a href="https://panorama.ro/author/alina-matis/" target="_blank">Alina Mărculescu Matiș</a> </p>',
     chapters: [
         {
@@ -53,7 +53,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Începând cu data de 30 noiembrie 2023, în România a intrat în vigoare sistemul garanție-returnare (SGR). De acum, plasticul nu mai e doar sursă de poluare și risipă, ci o resursă, cu un preț concret pentru fiecare consumator: <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 50 de bani </span>, cât e garanția pe recipient care se adaugă prețului produselor vândute în ambalaje de plastic, sticlă sau metal și care se recuperează când e returnat ambalajul.',
+            description: 'Începând cu data de 30 noiembrie 2023, în România a intrat în vigoare <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> sistemul garanție-returnare (SGR). </span> De acum, plasticul nu mai e doar sursă de poluare și risipă, ci o resursă, cu un preț concret pentru fiecare consumator: <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 50 de bani, </span> cât e garanția pe recipient care se adaugă prețului produselor vândute în ambalaje de plastic, sticlă sau metal și care se recuperează când e returnat ambalajul.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -117,7 +117,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Materialele plastice, obținute din combustibili fosili, <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> au fost inventate acum mai bine de un secol </span>, Însă producția s-a răspândit abia după cel de-Al Doilea Război Mondial. Potențialul lui a fost conștientizat foarte repede, iar plasticul a ajun să transforme industrii și economia globală.',
+            description: 'Materialele plastice, obținute din combustibili fosili, <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> au fost inventate acum mai bine de un secol. </span> Însă producția s-a răspândit abia după cel de-al Doilea Război Mondial. Potențialul lui a fost conștientizat foarte repede, iar plasticul a ajuns să transforme industrii și economia globală.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -560,7 +560,7 @@ var config = {
 
         {
             id: 'douamiisaizeci',
-            alignment: 'center',
+            alignment: 'left',
             hidden: false,
             title: '',
             image: '',
@@ -659,7 +659,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Din 1950m și până în 2023, s-au produs <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 11 miliarde de tone de plastic. </span> ',
+            description: 'Din 1950 și până în 2023, s-au produs <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 11 miliarde de tone de plastic. </span> ',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -1386,7 +1386,38 @@ var config = {
             hidden: false,
             title: '',
             image: '',                      
-            description: '<iframe src="https://flo.uri.sh/visualisation/15567581/embed" title="Interactive or visual content" class="flourish-embed-iframe" frameborder="0" scrolling="no" style="width:100%;height:600px;" sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"></iframe><div style="width:100%!;margin-top:4px!important;text-align:right!important;"><a class="flourish-credit" href="https://public.flourish.studio/visualisation/15567581/?utm_source=embed&utm_campaign=visualisation/15567581" target="_top" style="text-decoration:none!important"><img alt="Made with Flourish" src="https://public.flourish.studio/resources/made_with_flourish.svg" style="width:105px!important;height:16px!important;border:none!important;margin:0!important;"> </a></div>',
+            description: '<iframe src="https://flo.uri.sh/visualisation/15599915/embed" title="Interactive or visual content" class="flourish-embed-iframe" frameborder="0" scrolling="no" style="width:100%;height:600px;" sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"></iframe><div style="width:100%!;margin-top:4px!important;text-align:right!important;"><a class="flourish-credit" href="https://public.flourish.studio/visualisation/15599915/?utm_source=embed&utm_campaign=visualisation/15599915" target="_top" style="text-decoration:none!important"><img alt="Made with Flourish" src="https://public.flourish.studio/resources/made_with_flourish.svg" style="width:105px!important;height:16px!important;border:none!important;margin:0!important;"> </a></div>',
+            location: {
+                center: [12.02595, 49.90885],
+                zoom: 16,
+                pitch: 60,
+                bearing: 0,
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'doi.png',
+                //     opacity: 1,                    
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+
+        {
+            id: 'text20',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: '',                      
+            description: '<iframe src="https://flo.uri.sh/visualisation/15605231/embed" title="Interactive or visual content" class="flourish-embed-iframe" frameborder="0" scrolling="no" style="width:100%;height:600px;" sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"></iframe><div style="width:100%!;margin-top:4px!important;text-align:right!important;"><a class="flourish-credit" href="https://public.flourish.studio/visualisation/15605231/?utm_source=embed&utm_campaign=visualisation/15605231" target="_top" style="text-decoration:none!important"><img alt="Made with Flourish" src="https://public.flourish.studio/resources/made_with_flourish.svg" style="width:105px!important;height:16px!important;border:none!important;margin:0!important;"> </a></div>',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,

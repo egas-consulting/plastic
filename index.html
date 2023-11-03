@@ -102,7 +102,7 @@
             padding-bottom: 10vh;
         }
         .hidden {
-            visibility: hidden;
+            opacity: 0;
         }
         .centered {
             width: 50vw;
@@ -132,7 +132,7 @@
         .step {
             padding-bottom: 50vh;            
             margin-bottom: 10vh; 
-            opacity: 0.25;
+            opacity: 0;
 
             /* right:0; */
             /* margin-right:3.5vw; */
@@ -147,8 +147,7 @@
 
 
 
-            
-            
+        
         }
         .step.active {
             opacity: 0.9;
@@ -179,12 +178,13 @@
             position: fixed;
             pointer-events: none;
             opacity: 0;
-            transition: 0.5s;
+            transition: opacity 0.3s;
         }
 
         .houseimga {
             max-width: 100%; /* or whatever maximum width you prefer */
             height: auto;
+            transition: opacity 0.3s;
         }
 
         mapboxgl-ctrl-logo {            
@@ -370,6 +370,7 @@
 
 <script src="./config.js"></script>
 <script>
+    
 var initLoad = true;
 var layerTypes = {
     'fill': ['fill-opacity'],
@@ -474,6 +475,8 @@ config.chapters.forEach((record, idx) => {
     features.appendChild(container);
 });
 
+
+
 story.appendChild(features);
 
 var footer = document.createElement('div');
@@ -562,6 +565,8 @@ map.on("load", function() {
             }
         });
     };
+
+    
 
     // As the map moves, grab and update bounds in inset map.
     if (config.inset) {
@@ -742,22 +747,6 @@ function updateInsetLayer(bounds) {
 // setup resize event
 window.addEventListener('resize', scroller.resize);
 
-const geojson = 
-{
-"type": "FeatureCollection",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "Title": "Camerun", "Șef de stat": "Președinte Paul Biya", "iconUrl": "Cameroon.png", "Academic field": "Professions and applied sciences", "Profession": "Law", "Universitatea": "Școala Națională de Administrație din Franța și Institutul de Studii Politice din Paris", "Gen": "Masculin", "Birth year ": 1933, "Generația": "Silent Generation", "Region": "Africa" }, "geometry": { "type": "Point", "coordinates": [ 12.354722, 7.369722 ] } },
-{ "type": "Feature", "properties": { "Title": "Palestina", "Șef de stat": "Președinte Mahmoud Abbas", "iconUrl": "Palestine.png", "Academic field": "Professions and applied sciences", "Profession": "law", "Universitatea": "Universitatea din Damasc și Universitatea Rusă a Prieteniei între popoare", "Gen": "Masculin", "Birth year ": 1935, "Generația": "Silent Generation", "Region": "Asia" }, "geometry": { "type": "Point", "coordinates": [ 35.233154, 31.952162 ] } },
-{ "type": "Feature", "properties": { "Title": "Arabia Saudită", "Șef de stat": "Regele Salman", "iconUrl": "Saudiarabia.png", "Academic field": null, "Profession": null, "Universitatea": null, "Gen": "Masculin", "Birth year ": 1935, "Generația": "Silent Generation", "Region": "Asia" }, "geometry": { "type": "Point", "coordinates": [ 45.079162, 23.885942 ] } },
-{ "type": "Feature", "properties": { "Title": "Kuwait", "Șef de stat": "Emir Nawaf Al-Ahmad Al-Jaber Al-Sabah", "iconUrl": "Kuwait.png", "Academic field": null, "Profession": null, "Universitatea": null, "Gen": "Masculin", "Birth year ": 1937, "Generația": "Silent Generation", "Region": "Asia" }, "geometry": { "type": "Point", "coordinates": [ 47.481766, 29.31166 ] } },
-{ "type": "Feature", "properties": { "Title": "Norvegia", "Șef de stat": "Regele Harald V", "iconUrl": "Norway.png", "Academic field": "Professions and applied sciences, Humanities and social sciences", "Profession": "Military officer, economics and politics", "Universitatea": "Academia Militară din Norvegia, Universitatea din Oxford", "Gen": "Masculin", "Birth year ": 1937, "Generația": "Silent Generation", "Region": "Europe" }, "geometry": { "type": "Point", "coordinates": [ 8.468946, 60.472024 ] } },
-{ "type": "Feature", "properties": { "Title": "Iran", "Șef de stat": "Liderul Suprem Ali Khamenei", "iconUrl": "Iran.png", "Academic field": "Humanities and social sciences", "Profession": "cleric", "Universitatea": "Seminarul Qom", "Gen": "Masculin", "Birth year ": 1939, "Generația": "Silent Generation", "Region": "Asia" }, "geometry": { "type": "Point", "coordinates": [ 53.688046, 32.427908 ] } },
-
-]
-}
-
-
 
     // add markers to map
 for (const feature of geojson.features) {
@@ -783,6 +772,8 @@ for (const feature of geojson.features) {
     )
     .addTo(map);
 }
+
+
 
 
 
