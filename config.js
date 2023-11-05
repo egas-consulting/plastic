@@ -285,7 +285,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Cu fiecare deceniu care s-a scurs de atunci, cantitatea de plastic <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> produsă </span> pe glob a crescut exponențial. Chiar dacă o raportăm la creșterea populației planetei, tot am ajuns, în 70 de ani, de la <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 1 kg de plastic </span>produs anual pe cap de locuitor, la <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 58 kg de plastic. </span> Aici suntem acum.',
+            description: 'Cu fiecare deceniu care s-a scurs de atunci, cantitatea de plastic <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> produsă </span> pe glob a crescut exponențial. Chiar dacă o raportăm la creșterea populației planetei, tot am ajuns, în 70 de ani, de la <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 0,8 kg de plastic </span>produs anual pe cap de locuitor, la <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 57,9 kg de plastic. </span> Aici suntem acum.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -317,7 +317,7 @@ var config = {
             title: '',
             image: '',
             backimage:'yes',
-            description: 'Dacă, însă, situația nu se schimbă în viitorul apropiat, cantitatea de plastic produsă pe cap de locuitor la nivel global se va dubla, în următorii 40 ani. E un scenariu care rezultă din suprapunerea proiecțiilor ONU privind evoluția populației și a prognozelor Organizației de Cooperare și Dezvoltare Economică (OCDE) referitoare la producția de plastic.',
+            description: 'Dacă, însă, situația nu se schimbă în viitorul apropiat, cantitatea de plastic produsă la nivel global și raportată la populație se va dubla, în următorii 40 ani. E un scenariu care rezultă din suprapunerea proiecțiilor ONU privind evoluția populației și a prognozelor Organizației de Cooperare și Dezvoltare Economică (OCDE) referitoare la producția de plastic.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -701,7 +701,7 @@ var config = {
             title: '',
             image: '',
             backimage:'yes',
-            description: 'În următorii 40 ani, cantitatea de plastic produsă pe cap de locuitor la nivel global <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> se va dubla. </span>',
+            description: 'În următorii 40 ani, cantitatea de plastic produsă și raportată la populația globului, <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> se va dubla. </span>',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -921,7 +921,7 @@ var config = {
             title: '',
             image: '',
             backimage:'yes',
-            description: 'ipotetic, ar însemna <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 1,4 tone de plastic</span> pentru fiecare om. Sigur că o parte din aceasă cantitate, așa cum am văzut mai sus, a fost eliminată deja, dar chiar dacă scădem această valoare cu 20% (cât ar putea reprezenta incinerarea), tot rămâne o cantitate impresionantă de plastic cumulat pe planetă/cap de locuitor.',
+            description: 'ipotetic, ar însemna <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 1,4 tone de plastic</span> pentru fiecare om. Sigur că o parte din această cantitate, așa cum am văzut mai sus, a fost eliminată deja, dar chiar dacă scădem această valoare cu 20% (cât ar putea reprezenta incinerarea), tot rămâne o cantitate impresionantă de plastic cumulat pe planetă/cap de locuitor.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
