@@ -122,17 +122,17 @@
         }
         .light {
             color: #ffffff;
-            background-color: #22232700;
+            background-color: #222327;
             border-radius: 0px;
         }
         .dark {
             color: #ffffff;
-            background-color: #22232700;
+            background-color: #222327;
         }
         .step {
             padding-bottom: 50vh;            
             margin-bottom: 10vh; 
-            opacity: 0;
+            opacity: 0.5;
 
             /* right:0; */
             /* margin-right:3.5vw; */
@@ -211,17 +211,33 @@
 </head>
 <body>
 
-<div id="div-empty" class="backimage" style="opacity: 0;">
+<div id="div-primpoza" class="backimage" style="opacity: 0;">
     <figure style="margin: 0;">
-        <img id="img-empty" class="houseimga houseimg0" src="plastic.png" style="opacity: 0;" alt="">
+        <img id="img-primpoza" class="houseimga houseimg0" src="cumpara.png" style="opacity: 0;" alt="">
     </figure>
 </div>
 
-<div id="div-Intro" class="backimage" style="opacity: 0;">
+<div id="div-primpoza1" class="backimage" style="opacity: 0;">
     <figure style="margin: 0;">
-        <img id="img-Intro" class="houseimga houseimg0" src="plastic.png" style="opacity: 0;" alt="">
+        <img id="img-primpoza1" class="houseimga houseimg0" src="consuma.png" style="opacity: 0;" alt="">
     </figure>
 </div>
+
+
+
+<div id="div-primpoza2" class="backimage" style="opacity: 0;">
+    <figure style="margin: 0;">
+        <img id="img-primpoza2" class="houseimga houseimg0" src="returneaza.png" style="opacity: 0;" alt="">
+    </figure>
+</div>
+
+<div id="div-primpoza3" class="backimage" style="opacity: 0;">
+    <figure style="margin: 0;">
+        <img id="img-primpoza3" class="houseimga houseimg0" src="recicleaza.png" style="opacity: 0;" alt="">
+    </figure>
+</div>
+
+
 
 
 <div id="div-Intro2" class="backimage" style="opacity: 0;">
@@ -318,12 +334,6 @@
 <div id="div-text7" class="backimage" style="opacity: 0;">
     <figure style="margin: 0;">
         <img id="img-text7" class="houseimga houseimg0" src="people.gif" style="opacity: 0;" alt="">
-    </figure>
-</div>
-
-<div id="div-text9" class="backimage" style="opacity: 0;">
-    <figure style="margin: 0;">
-        <img id="img-text9" class="houseimga houseimg0" src="sea.gif" style="opacity: 0;" alt="">
     </figure>
 </div>
 
@@ -742,10 +752,26 @@ function updateInsetLayer(bounds) {
     insetMap.getSource('boundsSource').setData(bounds);
 }
 // Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
+
+// setup resize event
+window.addEventListener('resize', scroller.resize);
+// Add zoom and rotation controls to the map.
 // map.addControl(new mapboxgl.NavigationControl());
 
 // setup resize event
 window.addEventListener('resize', scroller.resize);
+
+const geojson = 
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Title": "Austria", "producție": "lalala", "iconUrl": "pic.png", "Academic field": "Professions and applied sciences", "Profession": "Law", "Universitatea": "Școala Națională de Administrație din Franța și Institutul de Studii Politice din Paris", "Gen": "Masculin", "Birth year ": 1933, "Generația": "Silent Generation", "Region": "Africa" }, "geometry": { "type": "Point", "coordinates": [ 14.550072, 47.516231 ] } },
+
+
+]
+}
 
 
     // add markers to map
