@@ -53,7 +53,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Începând cu data de 30 noiembrie 2023, în România va intra în vigoare <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> sistemul garanție-returnare (SGR). </span> De acum, plasticul nu mai e doar sursă de poluare și risipă, ci o resursă, cu un preț concret pentru fiecare consumator: <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 50 de bani, </span> cât e garanția pe recipient care se adaugă prețului produselor vândute în ambalaje de plastic, sticlă sau metal și care se recuperează când e returnat ambalajul.',
+            description: 'Începând cu data de 30 noiembrie 2023, în România va intra în vigoare <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> sistemul garanție-returnare (SGR). </span> De acum, plasticul nu mai e doar sursă de poluare și risipă, ci o resursă, cu un preț concret pentru fiecare consumator: <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 50 de bani, </span> cât e garanția pe recipient, care se adaugă prețului produselor vândute în ambalaje de plastic, sticlă sau metal și care se recuperează când e returnat ambalajul.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -285,7 +285,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Cu fiecare deceniu care s-a scurs de atunci, cantitatea de plastic <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> produsă </span> pe glob a crescut exponențial. Chiar dacă o raportăm la creșterea populației planetei, tot am ajuns, în 70 de ani, de la <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 1 kg de plastic </span>produs anual pe cap de locuitor, la <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 58 kg de plastic </span>. Aici suntem acum.',
+            description: 'Cu fiecare deceniu care s-a scurs de atunci, cantitatea de plastic <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> produsă </span> pe glob a crescut exponențial. Chiar dacă o raportăm la creșterea populației planetei, tot am ajuns, în 70 de ani, de la <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 1 kg de plastic </span>produs anual pe cap de locuitor, la <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 58 kg de plastic. </span> Aici suntem acum.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -733,7 +733,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Problematic nu e doar că se produce tot mai mult plastic. Odată produs, el nu mai pleacă nicăieri sute de ani. <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> Cea mai mare parte a plasticului care s-a produs vreodată încă se află pe planetă. </span>  Îl regăsim fie încă în uz, fie sub formă de deșeuri sau de plastic care și-a încheiat durata de folosire.',
+            description: 'Problematic nu e doar că se produce tot mai mult plastic. Odată produs, el nu mai pleacă nicăieri sute de ani. <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> Cea mai mare parte a plasticului care s-a produs vreodată încă se află pe planetă.</span> Îl regăsim fie încă în uz, fie sub formă de deșeuri sau de plastic care și-a încheiat durata de folosire.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -889,7 +889,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',            
-            description: 'Dacă astăzi raportăm întreaga cantitate de plastic produsă din anii ‘50 și până în prezent, la populația actuală a planetei - de 8 miliarde de oameni - fără să ținem cont de metodele de eliminare ale plasticului, precum incinerarea, ',
+            description: 'În acest moment, raportăm întreaga cantitate de plastic produsă din anii ‘50 și până în prezent la populația actuală a planetei - de 8 miliarde de oameni -, fără să ținem cont de metodele de eliminare ale plasticului, precum incinerarea. ',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -921,7 +921,7 @@ var config = {
             title: '',
             image: '',
             backimage:'yes',
-            description: 'ipotetic, ar însemna <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 1,4 tone de plastic. </span> pentru fiecare om. Sigur că o parte din aceasă cantitate, așa cum am văzut mai sus, a fost eliminată, dar chiar dacă scădem această valoare cu 20% (cât ar putea reprezenta incinerarea), tot rămâne o cantitate impresionantă de plastic cumulat pe planetă/cap de locuitor.',
+            description: 'ipotetic, ar însemna <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 1,4 tone de plastic</span> pentru fiecare om. Sigur că o parte din aceasă cantitate, așa cum am văzut mai sus, a fost eliminată deja, dar chiar dacă scădem această valoare cu 20% (cât ar putea reprezenta incinerarea), tot rămâne o cantitate impresionantă de plastic cumulat pe planetă/cap de locuitor.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -954,7 +954,7 @@ var config = {
             title: '',
             image: '',
             backimage:'yes',
-            description: 'dar într-un scenariu în care producția de plastic crește exponențial, cantitatea de plastic care îi revine fiecărui om, crește și ea.',
+            description: 'Dar într-un scenariu în care producția de plastic crește exponențial, cantitatea de plastic care îi revine fiecărui om crește și ea.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -1018,7 +1018,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',            
-            description: 'Pe măsură ce producția de plastic crește, cantitatea de deșeuri de plastic crește și ea. Dacă ne uităm la deșeurile din plastic, ambalajele reprezintă o parte importantă. <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> Peste 30% din deșeurile de plastic produse anual </span> e dată de producția de ambalaje. Aceste articole, cum ar fi pungile de plastic sau ambalajele alimentare, au un scop foarte lung, adesea de numai câteva minute sau ore, dar au capacitatea de a „bântui” mediul înconjurător timp de sute de ani după ce le aruncăm.',
+            description: 'Pe măsură ce producția de plastic crește, cantitatea de deșeuri de plastic crește și ea. Dacă ne uităm la deșeurile din plastic, ambalajele reprezintă o parte importantă. <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> Peste 30% din deșeurile de plastic produse anual </span> sunt date de producția de ambalaje. Aceste articole, cum ar fi pungile de plastic sau ambalajele alimentare, au un scop foarte lung, adesea de numai câteva minute sau ore, dar au capacitatea de a „bântui” mediul înconjurător timp de sute de ani după ce le aruncăm.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
