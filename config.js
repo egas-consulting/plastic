@@ -701,7 +701,7 @@ var config = {
             title: '',
             image: '',
             backimage:'yes',
-            description: 'În următorii 40 ani, cantitatea de plastic produsă și raportată la populația globului, <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> se va dubla. </span>',
+            description: 'În următorii 40 ani, cantitatea de plastic produsă, raportată la populația globului <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> se va dubla. </span>',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
@@ -921,7 +921,7 @@ var config = {
             title: '',
             image: '',
             backimage:'yes',
-            description: 'ipotetic, ar însemna <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 1,4 tone de plastic</span> pentru fiecare om. Sigur că o parte din această cantitate, așa cum am văzut mai sus, a fost eliminată deja, dar chiar dacă scădem această valoare cu 20% (cât ar putea reprezenta incinerarea), tot rămâne o cantitate impresionantă de plastic cumulat pe planetă/cap de locuitor.',
+            description: 'Ipotetic, ar însemna <span style="outline-style:solid; outline-width:thin; outline-color:#6CA821; padding: 0.3vh; border-radius: 5px; color:#ffffff; font-weight: bold;"> 1,4 tone de plastic</span> pentru fiecare om. Sigur că o parte din această cantitate, așa cum am văzut mai sus, a fost eliminată deja, dar chiar dacă scădem această valoare cu 20% (cât ar putea reprezenta incinerarea), tot rămâne o cantitate impresionantă de plastic cumulat pe planetă/cap de locuitor.',
             location: {
                 center: [12.02595, 49.90885],
                 zoom: 16,
