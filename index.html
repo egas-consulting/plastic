@@ -189,7 +189,10 @@
 
         .mapboxgl-ctrl-logo {            
         display:none !important;
-        }   
+        }  
+
+        
+        
 
             
 
@@ -751,8 +754,8 @@ function addInsetLayer(bounds) {
 function updateInsetLayer(bounds) {
     insetMap.getSource('boundsSource').setData(bounds);
 }
-// Add zoom and rotation controls to the map.
-map.addControl(new mapboxgl.NavigationControl());
+// // Add zoom and rotation controls to the map.
+// map.addControl(new mapboxgl.NavigationControl());
 
 // setup resize event
 window.addEventListener('resize', scroller.resize);
